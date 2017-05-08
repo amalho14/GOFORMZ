@@ -4,9 +4,6 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import common.goformz.Check;
 import common.goformz.Enter;
-import common.goformz.Environment;
-import common.goformz.StartBrowser;
-import common.goformz.Templates;
 import common.goformz.Text;
 
 public class Description extends PartNumber {
@@ -41,17 +38,5 @@ public class Description extends PartNumber {
 		String concatString=currentText.concat(text);
 		Boolean result=Check.isEntered(descXpath, concatString,driver);
 		Assert.assertEquals("Can edit auto filled description for MFG and Par Number",false, result);
-	}
-	public static WebDriver open(){
-		Environment environment=new Environment();
-		environment.setTestEnvironmentURL();
-		environment.setTestCredentials();
-		StartBrowser start=new StartBrowser();
-		WebDriver driver=start.chrome(environment.getTestURL());
-		start.login(environment.getUserName(), environment.getTestPassword(), environment.getUser(), driver);
-		Templates t1=new Templates();
-		t1.open(driver);
-		t1.newForm(driver);
-		return driver;
 	}
 }
