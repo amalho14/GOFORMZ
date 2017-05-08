@@ -45,7 +45,7 @@ public class Description extends PartNumber {
 	public static WebDriver open(){
 		Environment environment=new Environment();
 		environment.setTestEnvironmentURL();
-		environment.setTestEnvironmentURL();
+		environment.setTestCredentials();
 		StartBrowser start=new StartBrowser();
 		WebDriver driver=start.chrome(environment.getTestURL());
 		start.login(environment.getUserName(), environment.getTestPassword(), environment.getUser(), driver);
