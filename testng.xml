@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Work Order Report">
+  <test name="Parts Used">
+    <classes>
+      <class name="test.suite.goformz.TestSetUp"/>
+      <class name="test.suite.goformz.TestDescription"/>
+      <class name="test.suite.goformz.TestMfg"/>
+      <class name="test.suite.goformz.TestPartNumber"/>
+      <class name="test.suite.goformz.TestQuantity"/>
+      <class name="test.suite.goformz.TestUnitPrice"/>
+      <class name="test.suite.goformz.TestTotalPrice" />
+      <class name="test.suite.goformz.E2ETest" />
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
