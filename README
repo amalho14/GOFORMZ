@@ -1,0 +1,5 @@
+#Before executing the test make changes to the following:
+
+#Enter a valid email, password and user in the file- src/common/goformz/Environment.setTestCredentials()
+
+
